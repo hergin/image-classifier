@@ -197,5 +197,6 @@ pip-selfcheck.json
 
 /data
 /data-cropped
+/data-cropped-smaller
 
 /share
