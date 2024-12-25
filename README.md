@@ -1,5 +1,15 @@
 Images are 800x800 in all of them except noted in simpler model.
 
+### Python commands
+Project tested with Python 3.12
+* Create virtual env
+  * `python -m venv .`
+* Activate virtual env
+  * `source bin/activate` for linux
+  * `Scripts/activate.ps1` for windows
+* Install requirements:
+  * `pip install tensorflow opencv-python scikit-learn matplotlib`
+
 ### Most sophisticated model (10 epoch)
 ```
 model = Sequential([
