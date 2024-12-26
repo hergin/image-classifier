@@ -1,6 +1,6 @@
-Images are 800x800 in all of them except noted in simpler model.
 
-### Python commands
+
+## Python commands
 Project tested with Python 3.12
 * Create virtual env
   * `python -m venv .`
@@ -9,6 +9,14 @@ Project tested with Python 3.12
   * `Scripts/activate.ps1` for windows
 * Install requirements:
   * `pip install tensorflow opencv-python scikit-learn matplotlib`
+* Run prediction:
+  * `python predict.py`
+
+If you see the prediction result successfully, it works!
+
+
+## Model notes
+Images are 800x800 in all of them except noted in simpler model.
 
 ### Most sophisticated model (10 epoch)
 ```

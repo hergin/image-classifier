@@ -4,10 +4,7 @@ from tensorflow.keras.preprocessing.image import load_img, img_to_array
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 
-# Set paths
-data_dir = "data-cropped-smaller"
-img_size = (300, 300)
-batch_size = 32
+img_size = (200, 200)
 class_labels = ['dark-no-train', 'dark-with-train', 'light-no-train', 'light-with-train']
 
 # Load model
@@ -25,5 +22,5 @@ def predict(image_path):
     return class_labels[class_idx], predictions[0][class_idx]
 
 # Example usage
-label, confidence = predict("data-cropped-smaller/dark-with-train/3341875975_20241105005934_IMAG0945-100-945.JPG")
+label, confidence = predict("sample.jpg")
 print(f"Predicted: {label} with confidence {confidence}")

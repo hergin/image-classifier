@@ -6,8 +6,8 @@ import os
 from tensorflow.keras.layers import SeparableConv2D
 
 # Set paths
-data_dir = "data-cropped-smaller"
-img_size = (300, 300)
+data_dir = "data-cropped-200x200"
+img_size = (200, 200)
 batch_size = 32
 
 # Load data
@@ -31,7 +31,7 @@ model = Sequential([
     Conv2D(16, (3, 3), activation='relu', input_shape=(*img_size, 3)),
     MaxPooling2D(pool_size=(2, 2)),
     Flatten(),
-    Dense(64, activation='relu'),
+    Dense(32, activation='relu'),
     Dense(train_data.num_classes, activation='softmax')
 ])
 
