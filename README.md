@@ -2,6 +2,7 @@
 
 ## Python commands
 Project tested with Python 3.12
+* Clone this repo and CD into it
 * Create virtual env
   * `python -m venv .`
 * Activate virtual env
